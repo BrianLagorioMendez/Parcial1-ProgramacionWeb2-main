@@ -1,0 +1,156 @@
+.contactos{
+    display:flex;
+    justify-content:center;
+    margin:70px 0;
+}
+
+.cajacontacto{
+    width:700px;
+    padding:50px;
+    background:rgba(0,0,0,.60);
+    text-align:center;
+}
+
+.cajacontacto h2{
+    font-size:42px;
+    margin-bottom:20px;
+    color:white;
+}
+
+.subtitulo{
+    color:#d4af37;
+    font-size:28px;
+    font-style:italic;
+    margin-bottom:25px;
+}
+
+.descripcion{
+    font-size:21px;
+    margin-bottom:45px;
+}
+
+form{
+    text-align:left;
+}
+
+form div{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:25px;
+}
+
+label{
+    margin-bottom:10px;
+    font-size:18px;
+    color:white;
+}
+
+input,textarea{
+    padding:15px;
+    font-size:18px;
+    color:white;
+    background:rgba(255,255,255,.05);
+    border:2px solid rgba(212,175,55,.5);
+    outline:none;
+    transition:.35s;
+    box-sizing:border-box;
+    width:100%;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#d4af37;
+    box-shadow:0 0 10px rgba(212,175,55,.5);
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    font-size:22px;
+    background:transparent;
+    color:white;
+    border:2px solid #d4af37;
+    transition:.35s;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d4af37;
+    color:black;
+    transform:scale(1.03);
+}
+
+/*TABLET*/
+
+@media (max-width:992px){
+
+    .contactos{
+        margin:50px 20px;
+    }
+
+    .cajacontacto{
+        width:100%;
+        max-width:700px;
+        padding:40px;
+    }
+
+    .cajacontacto h2{
+        font-size:34px;
+    }
+
+    .subtitulo{
+        font-size:24px;
+    }
+
+    .descripcion{
+        font-size:20px;
+    }
+
+}
+
+/*CELU*/
+
+@media (max-width:576px){
+
+    .contactos{
+        margin:30px 15px;
+    }
+
+    .cajacontacto{
+        width:100%;
+        padding:25px;
+    }
+
+    .cajacontacto h2{
+        font-size:28px;
+    }
+
+    .subtitulo{
+        font-size:20px;
+    }
+
+    .descripcion{
+        font-size:18px;
+        margin-bottom:30px;
+    }
+
+    label{
+        font-size:16px;
+    }
+
+    input,
+    textarea{
+        font-size:16px;
+        padding:12px;
+    }
+
+    button{
+        font-size:18px;
+        padding:15px;
+    }
+
+}

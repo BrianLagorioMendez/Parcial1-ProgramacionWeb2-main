@@ -1,0 +1,189 @@
+.presentacion{
+    display:flex;
+    justify-content:center;
+    max-width:1700px;
+    margin:40px auto 0;
+    padding:0 30px;
+}
+
+.cajaelenco{
+    width:100%;
+    background:rgba(0,0,0,.60);
+    padding:50px 50px 70px;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.cajaelenco h2{
+    font-size:42px;
+    color:white;
+    margin-bottom:20px;
+}
+
+.subtitulo{
+    color:#d4af37;
+    font-size:28px;
+    font-style:italic;
+    margin-bottom:25px;
+}
+
+.descripcion{
+    color:white;
+    font-size:22px;
+    line-height:1.7;
+}
+
+.actores{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    max-width:1700px;
+    margin:auto;
+    padding:0 30px 30px;
+}
+
+.actor{
+    background:rgba(0,0,0,.60);
+    text-align:center;
+    transition:.35s;
+    overflow:hidden;
+}
+
+.actor:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(212,175,55,.35);
+}
+
+.actor img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    object-position:center top;
+    transition:.4s;
+}
+
+.actor:hover img{
+    transform:scale(1.05);
+}
+
+.actor h4{
+    color:#d4af37;
+    font-size:24px;
+    margin:20px 0 10px;
+    font-weight:500;
+}
+
+.actor p{
+    margin:0;
+    padding:0 20px;
+}
+
+.actor p:nth-of-type(1){
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.actor .desc{
+    color:#dddddd;
+    font-size:17px;
+    line-height:1.6;
+    padding-bottom:25px;
+    margin-top:10px;
+}
+
+.actor h4::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:2px;
+    background:#d4af37;
+    margin:15px auto;
+}
+
+/*TABLET*/
+
+@media (max-width:992px){
+
+    .presentacion{
+        padding:0 20px;
+    }
+
+    .cajaelenco{
+        padding:40px;
+    }
+
+    .cajaelenco h2{
+        font-size:34px;
+    }
+
+    .subtitulo{
+        font-size:24px;
+    }
+
+    .descripcion{
+        font-size:20px;
+    }
+
+    .actores{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+        padding:0 20px 30px;
+    }
+
+}
+
+/*CELU*/
+
+@media (max-width:576px){
+
+    .presentacion{
+        padding:0 15px;
+    }
+
+    .cajaelenco{
+        padding:30px;
+    }
+
+    .cajaelenco h2{
+        font-size:28px;
+    }
+
+    .subtitulo{
+        font-size:20px;
+    }
+
+    .descripcion{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .actores{
+        grid-template-columns:1fr;
+        gap:25px;
+        padding:0 15px 30px;
+    }
+
+    .actor{
+        max-width:420px;
+        margin:auto;
+    }
+
+    .actor img{
+        height:auto;
+    }
+
+    .actor h4{
+        font-size:22px;
+    }
+
+    .actor p:nth-of-type(1){
+        font-size:17px;
+    }
+
+    .actor .desc{
+        font-size:16px;
+    }
+
+}
