@@ -13,34 +13,7 @@
 <body>
 
 
-    <video autoplay loop muted id="videoFondo">
-        <source src="./video/videodark1.mp4" type="video/mp4">
-    </video>
-
-    <header>
-        
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-    <label for="menu-toggle" class="menu-icon">
-        <i class="fas fa-bars"></i>
-    </label>
-        
-        <a href="./index.html">
-            <h1>DARK</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/sobre.html">Sobre la serie</a></li>
-                <li><a href="./pages/temporadas.html">Temporadas</a></li>
-                <li><a href="./pages/elenco.html">Reparto</a></li>
-                <li><a href="./pages/produccion.html">Producción</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
+   <?php require_once __DIR__ . '/componentes/header.php'; ?>
 
 <section class="bienvenida">
 
@@ -129,27 +102,7 @@
 
 
 
-   <footer class="footer">
-
-    <li><a class="volver" href="../index.html">Inicio</a></li>
-
-    <div class="footer-contenido">
-
-        <p>Seguinos en redes:</p>
-
-            <nav>
-                <div class="redes">
-                    <a href="https://www.instagram.com/darknetflix/?hl=es"><i class="fab fa-instagram"></i></a>
-                    <a href="https://x.com/darknetflix"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/watch?v=ESEUoa-mz2c"><i class="fab fa-youtube"></i></a>
-                </div>
-            </nav>
-            <p class="copyright">
-                © 2026 Dark Fan Page - Todos los derechos reservados
-            </p>
-        </div>
-
-    </footer>
+  <?php require_once __DIR__ . '/componentes/footer.php'; ?>
 
 </body>
 

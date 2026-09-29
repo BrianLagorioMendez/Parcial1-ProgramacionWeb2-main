@@ -187,3 +187,14 @@
     }
 
 }
+
+.actor.destacado {
+    border: 3px solid #d4af37 !important;
+    box-shadow: 0 0 20px rgba(212, 175, 85, 0.6) !important;
+    background: rgba(212, 175, 55, 0.1) !important;
+}
+
+.actor.destacado h4 {
+    color: #ffffff !important;
+    font-weight: bold !important;
+}

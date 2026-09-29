@@ -4,53 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark | Sobre la serie</title>
-    <link rel="stylesheet" href="../style/estilos.css">
+    <title>Dark</title>
+    <link rel="stylesheet" href="./style/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" href="../IMAGENES/favicondark4.png" type="image/x-icon">
+    <link rel="icon" href="IMAGENES/favicondark4.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <video autoplay loop muted id="videoFondo">
-        <source src="../video/videodark1.mp4" type="video/mp4">
-    </video>
-
-<header>
-
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-    <label for="menu-toggle" class="menu-icon">
-        <i class="fas fa-bars"></i>
-    </label>
-
-    <a href="../index.html">
-        <h1>DARK</h1>
-    </a>
-
-    <nav>
-
-        <ul>
-
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Sobre la serie</a></li>
-            <li><a href="./temporadas.html">Temporadas</a></li>
-            <li><a href="./elenco.html">Reparto</a></li>
-            <li><a href="./produccion.html">Producción</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
+    <?php require_once __DIR__ . '/componentes/header.php'; ?>
 
 
 <section class="presentacionsobre">
 
     <div class="cajasobre">
 
-        <img src="../IMAGENES/favicondark4.png" alt="Triqueta" class="triqueta">
+        <img src="IMAGENES/favicondark4.png" alt="Triqueta" class="triqueta">
 
         <h2>"El principio es el fin y el fin es el principio."</h2>
 
@@ -98,7 +67,7 @@
 
     <audio controls>
 
-        <source src="../sonidos/soundtrackdark.mp3" type="audio/mpeg">
+        <source src="sonidos/soundtrackdark.mp3" type="audio/mpeg">
 
     </audio>
 
@@ -118,7 +87,7 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/jonas6.jpg" alt="imagen jonas">
+        <img src="IMAGENES/jonas6.jpg" alt="imagen jonas">
 
     </div>
 
@@ -140,7 +109,7 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/particuladedios.webp" alt="imagen particula de dios">
+        <img src="IMAGENES/particuladedios.webp" alt="imagen particula de dios">
 
     </div>
 
@@ -163,7 +132,7 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/sicmundus2.jpg" alt="imagen sicmundus">
+        <img src="IMAGENES/sicmundus2.jpg" alt="imagen sicmundus">
 
     </div>
 
@@ -189,7 +158,7 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/librodark.jpg" alt="imagen libro">
+        <img src="IMAGENES/librodark.jpg" alt="imagen libro">
 
     </div>
 
@@ -216,7 +185,7 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/maquinadeltiempo.jpg" alt="imagen maquina del tiempo">
+        <img src="IMAGENES/maquinadeltiempo.jpg" alt="imagen maquina del tiempo">
 
     </div>
 
@@ -242,7 +211,7 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/plantanuclear.jpg" alt="imagen planta nuclear">
+        <img src="IMAGENES/plantanuclear.jpg" alt="imagen planta nuclear">
 
     </div>
 
@@ -270,50 +239,14 @@
 
     <div class="imagen">
 
-        <img src="../IMAGENES/origenmaquina.webp" alt="imagen origen maquina del tiempo">
+        <img src="IMAGENES/origenmaquina.webp" alt="imagen origen maquina del tiempo">
 
     </div>
 
 </section>
 
 
-<footer class="footer">
-
-    <li><a class="volver" href="../index.html">Inicio</a></li>
-
-    <div class="footer-contenido">
-
-        <p>Seguinos en redes:</p>
-
-        <nav>
-
-            <div class="redes">
-
-                <a href="https://www.instagram.com/darknetflix/?hl=es">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://x.com/darknetflix">
-                    <i class="fab fa-twitter"></i>
-                </a>
-
-                <a href="https://www.youtube.com/watch?v=ESEUoa-mz2c">
-                    <i class="fab fa-youtube"></i>
-                </a>
-
-            </div>
-
-        </nav>
-
-        <p class="copyright">
-
-            © 2026 Dark Fan Page - Todos los derechos reservados
-
-        </p>
-
-    </div>
-
-</footer>
+<?php require_once __DIR__ . '/componentes/footer.php'; ?>
 
 </body>
 

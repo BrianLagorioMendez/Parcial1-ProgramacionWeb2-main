@@ -4,41 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark | Producción</title>
-    <link rel="stylesheet" href="../style/estilos.css">
+    <title>Dark</title>
+    <link rel="stylesheet" href="./style/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="IMAGENES/favicondark4.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <video autoplay loop muted id="videoFondo">
-        <source src="../video/videodark1.mp4" type="video/mp4">
-    </video>
-
-    <header>
-
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-    <label for="menu-toggle" class="menu-icon">
-        <i class="fas fa-bars"></i>
-    </label>
-
-        <a href="../index.html">
-            <h1>DARK</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre la serie</a></li>
-                <li><a href="./temporadas.html">Temporadas</a></li>
-                <li><a href="./elenco.html">Reparto</a></li>
-                <li><a href="#">Producción</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-
-        </nav>
-    </header>
+    <?php require_once __DIR__ . '/componentes/header.php'; ?>
 
     <section class="produccion">
 
@@ -47,7 +21,7 @@
 
         <div class="video">
             <video controls>
-                <source src="../video/detras-de-camaras-con-dark-netflix.mp4" type="video/mp4">
+                <source src="video/detras-de-camaras-con-dark-netflix.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -66,7 +40,7 @@
             </div>
 
             <div class="imagenprodu">
-                <img src="../IMAGENES/adamdetrasescena.png">
+                <img src="IMAGENES/adamdetrasescena.png">
             </div>
         </div>
 
@@ -86,8 +60,8 @@
             </div>
 
             <div class="imagenprodu">
-                <img src="../IMAGENES/marthajonascueva.png">
-                <img src="../IMAGENES/escenabosque.jpg">
+                <img src="IMAGENES/marthajonascueva.png">
+                <img src="IMAGENES/escenabosque.jpg">
             </div>
         </div>
 
@@ -109,8 +83,8 @@
             </div>
 
             <div class="imagenprodu">
-                <img src="../IMAGENES/efectosescena.jpg">
-                <img src="../IMAGENES/efectoescena2.jpg">
+                <img src="IMAGENES/efectosescena.jpg">
+                <img src="IMAGENES/efectoescena2.jpg">
             </div>
         </div>
 
@@ -136,7 +110,7 @@
                             Einstein
                             de que el tiempo no es lineal sino un círculo”.
                         </p>
-                        <img src="../IMAGENES/eistein.webp" alt="imagen einstein">
+                        <img src="IMAGENES/eistein.webp" alt="imagen einstein">
                     </div>
                 </article>
 
@@ -155,7 +129,7 @@
                             conocimiento
                             ilimitado y lograr una plenitud mundana, algo que vemos de diversas formas en Dark.
                         </p>
-                        <img src="../IMAGENES/curiosidad2.webp" alt="">
+                        <img src="IMAGENES/curiosidad2.webp" alt="">
                     </div>
                 </article>
 
@@ -172,7 +146,7 @@
                             pop.
                         </p>
 
-                        <img src="../IMAGENES/curiosidad3.webp" alt="">
+                        <img src="IMAGENES/curiosidad3.webp" alt="">
                     </div>
 
                 </article>
@@ -191,7 +165,7 @@
                             se
                             insinúa que es de los años 80.
                         </p>
-                        <img src="../IMAGENES/curiosidad4.webp" alt="">
+                        <img src="IMAGENES/curiosidad4.webp" alt="">
                     </div>
                 </article>
 
@@ -208,7 +182,7 @@
                             sabiduria
                             del ocultismo.
                         </p>
-                        <img src="../IMAGENES/curiosidad5.webp" alt="">
+                        <img src="IMAGENES/curiosidad5.webp" alt="">
                     </div>
                 </article>
 
@@ -223,7 +197,7 @@
                             Donnie
                             Darko (2001), la cual también tiene como tema central los viajes en el tiempo.
                         </p>
-                        <img src="../IMAGENES/curiosidad6.webp" alt="">
+                        <img src="IMAGENES/curiosidad6.webp" alt="">
                     </div>
                 </article>
 
@@ -234,26 +208,7 @@
 
 
 
-        <footer class="footer">
-
-            <a class=volver href="../index.html">Inicio</a>
-            <div class="footer-contenido">
-
-
-                <p>Seguinos en redes:</p>
-                <nav>
-                    <div class="redes">
-                        <a href="https://www.instagram.com/darknetflix/?hl=es"><i class="fab fa-instagram"></i></a>
-                        <a href="https://x.com/darknetflix"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/watch?v=ESEUoa-mz2c"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </nav>
-                <p class="copyright">
-                    © 2026 Dark Fan Page - Todos los derechos reservados
-                </p>
-            </div>
-
-        </footer>
+<?php require_once __DIR__ . '/componentes/footer.php'; ?>
 
 </body>
 
