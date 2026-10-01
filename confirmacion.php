@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $motivo = isset($_POST['motivo']) ? trim($_POST['motivo']) : '';
     $mensaje = isset($_POST['mensaje']) ? trim($_POST['mensaje']) : '';
 
-    //valida que los campos obligatorios no esten vacíos//
+    //valida que los campos obligatorios no esten vacios//
     if (empty($nombre) || empty($apellido) || empty($email) || empty($motivo) || empty($mensaje)) {
         $errores[] = "Todos los campos del formulario son obligatorios.";
     }
