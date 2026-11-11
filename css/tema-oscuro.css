@@ -1,0 +1,33 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #18191a; color: #e4e6eb; line-height: 1.6; }
+
+.contenedor { width: 90%; max-width: 960px; margin: 0 auto; padding: 15px; }
+
+.header-principal { background-color: #242526; color: #fff; padding: 15px 0; border-bottom: 1px solid #3a3b3c; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.btn-tema { color: #f39c12; text-decoration: none; margin-left: 5px; font-weight: bold; }
+
+.nav-principal { background-color: #242526; border-bottom: 1px solid #3a3b3c; }
+.menu { list-style: none; display: flex; align-items: center; }
+.menu li a { display: block; color: #e4e6eb; padding: 12px 18px; text-decoration: none; }
+.menu li a:hover { background-color: #3a3b3c; }
+.usuario-info { margin-left: auto; color: #b0b3b8; font-size: 0.9em; }
+.btn-logout { color: #e74c3c !important; display: inline !important; padding: 0 !important; }
+
+.contenido-app { min-height: 70vh; margin-top: 25px; }
+
+.form-box { background: #242526; padding: 25px; border-radius: 8px; max-width: 450px; border: 1px solid #3a3b3c; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 600; }
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"] { width: 100%; padding: 10px; border: 1px solid #3a3b3c; background-color: #3a3b3c; color: #fff; border-radius: 4px; }
+
+.btn-principal { background-color: #27ae60; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn-secundario { background-color: #2980b9; color: #fff; padding: 10px 18px; border-radius: 4px; text-decoration: none; display: inline-block; }
+
+.msg-flash { padding: 12px; margin-bottom: 20px; border-radius: 4px; }
+.msg-exito { background-color: #1e4620; color: #a3e6a1; }
+.msg-error { background-color: #4a1c1d; color: #f5a3a3; }
+.msg-info { background-color: #1b3a4b; color: #9be1f9; }
+
+.card-box { background: #242526; padding: 20px; border-radius: 8px; border: 1px solid #3a3b3c; margin-top: 15px; }
+.footer-principal { background-color: #242526; color: #b0b3b8; text-align: center; padding: 20px 0; margin-top: 40px; border-top: 1px solid #3a3b3c; }
